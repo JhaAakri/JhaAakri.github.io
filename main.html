@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+  <script>
+    // if the page was loaded from a refresh
+    if (performance.navigation.type === 1) {
+      window.location.href = "index.html";
+    }
+  </script>
+
+
+
+    <style>
+        body {
+          background-color: black;
+          color: white;
+          font-size: 220px;
+          text-align: center;
+          padding-top: 40vh;
+          animation: fade-in 2s ease-in;
+        }
+        
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+  </style>
+</head>
+<body>
+  <div id="greeting">Hello</div>
+
+  <script>
+    // Function to display "Hello" in different languages
+    function displayGreeting() {
+      var greetings = {
+        en: "Hello", // English
+        es: "Hola", // Spanish
+        fr: "Bonjour", // French
+        de: "Hallo", // German
+        it: "Ciao", // Italian
+        nl: "Hallo", // Dutch
+        ru: "Привет", // Russian
+        ja: "こんにちは", // Japanese
+        zh: "你好", // Chinese
+        hi: "नमस्ते", // Hindi
+      };
+
+      var languageKeys = Object.keys(greetings); 
+      var currentLanguageIndex = 0; 
+      var cycleCount = 0; 
+
+      // Function to update the greeting with the next language
+      function updateGreeting() {
+        var currentLanguageKey = languageKeys[currentLanguageIndex];
+        var greeting = greetings[currentLanguageKey];
+        document.getElementById("greeting").textContent = greeting;
+        currentLanguageIndex = (currentLanguageIndex + 1) % languageKeys.length; // Move to the next language index
+
+        // Check if a certain number of cycles have been completed
+        cycleCount++;
+        if (cycleCount === 11) { 
+          redirectToMainPage();
+        }
+      }
+
+      // Function to redirect to the main page
+      function redirectToMainPage() {
+        window.location.href = "index.html";
+      }
+
+      // Call the function to update the greeting every 2 seconds 
+      setInterval(updateGreeting, 200);
+    }
+
+    // Call the function when the webpage finishes loading
+    window.addEventListener("load", displayGreeting);
+  </script>
+</body>
+</html>

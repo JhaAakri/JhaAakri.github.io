@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+    <script>
+        if (performance.navigation.type === 1) {
+          window.location.href = "main.html";
+        }
+      </script>
+
+</head>
+<body >
+
+    
+
+    <div id="nav-menu">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#home" class="nav-link home"><b>Home</b></a></li>
+                    <li><a href="#about" class="nav-link about"><b>About</b></a></li>
+                    <li><a href="#skills" class="nav-link skills"><b>Skills</b></a></li>
+                    <li><a href="#projects" class="nav-link projects"><b>Projects</b></a></li>
+                    <li><a href="#contact" class="nav-link contact"><b>Contact</b></a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="cols cols0">
+                    <span class="topline">Hello</span>
+                    <h1>I'm <span class="multiText"></span></h1>
+                    <h4>Web Developer</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------about-------->
+    <div id="about" class="about section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm Aakriti Jha, holding a degree in Information Science & engineering from Gogte Institute of Technology. With a strong grasp of data structures and algorithms, I excel in problem-solving at basic and intermediate levels. Passionate and consistent in my work, I have a deep love for programming. I enjoy breaking down complex problems, implementing efficient solutions using data structures and algorithms. Collaborative and communicative, I value teamwork and continuously seek opportunities to enhance my skills. I'm eager to contribute, grow, and make a positive impact in the field of technology.</p>
+
+                        <div class="tab-tiles">
+                            <p class="tab-links active-link" onclick="opentab('education')"><b>Education</b></p>
+                            <p class="tab-links"  onclick="opentab('skills')"><b>Skills</b></p>
+                            <p class="tab-links" onclick="opentab('experience')"><b>Experience</b></p>
+                            <p class="tab-links" onclick="opentab('Achivement')"><b>Achivement</b></p>
+                        </div>
+                        <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2019-2023</span><br>Bachelor Of Engineering<br>Kls Gogte Institute Of Technology,Belagavi,Karnataka<br>Course-Information Science and Engineering<br>Cgpa-8.95</li>
+                                <li><span>2017-2018</span><br>Pre University<br>ICS Mahesh pu college,Dharwad,Karnataka<br>Percentage-77.83</li>
+                                <li><span>2015-2016</span><br>secondary school<br>Bakhshi's Springdales Senior Secondary School,Kota, Rajasthan<br>Cgpa-7.6</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Web Skills</span><br>web Developer</li>
+                                <li><span>Programming skill</span><br>c++,java,DSA</li>
+                                <li><span>Database</span><br>Sql,mangodb</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>08/2021-10/2021</span><br>Intern<br>@Infynow Software Solutions LLP<br>Belagavi,Karnataka<br>web Development and web design using python  </li>
+                                <li><span>05/2023-09/2023</span><br> Front End Developer <br>@Discoverweb<br>Bangalore,Karnataka<br> <ul>
+                                    <li>•Collaborated with senior developers and designers to create responsive and visually appealing web applications. </li>
+                                    <li>•Implemented UI designs using HTML, CSS, and JavaScript, enhancing website functionality and aesthetics.</li>
+                                    <li>•Conducted cross-browser compatibility testing and resolved compatibility issues for a consistent user experience. </li>
+                                    <li>•Assisted in integrating third-party APIs and optimizing website performance for improved load times. </li>
+                                    <li>•Contributed to code reviews, documentation, and knowledge sharing within the development team.</li>
+                                </ul></li>
+                                <li><span>12/2023-Present</span><br>Front-End Developer <br>@Deep Eigen Private 
+                                    Limited<br>Bhopal,Madhya Pradesh</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="Achivement">
+                            <ul>
+                                <li><span>Codeathon</span><br>Secured 2nd place competitive programming
+                                    coding contest organized by ACM Student Chapter KLS GIT</li>
+                                <li><span>CodeShake</span><br>Secured 1st place competitive coding contest
+                                    organized by IEEE GIT and CodeChef KLSGIT Chapter</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------Projects------------ -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-calculator"></i>
+                <h2><b>Mynta Clone</b></h2>
+                <p> Developed a Myntra-inspired e-commerce website clone using HTML and CSS, replicating the user interface and design aesthetics of the original platform. 
+                    <br> Implemented client-side data storage and retrieval using localStorage, enabling users to save and manage their shopping cart and preferences seamlessly 
+                    without requiring server-side storage. 
+                    </p>
+                <a href="https://masai-myntra-fashion-clone.netlify.app">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2><b>Bicycle website</b></h2>
+                <p> Developed a fully responsive and functional E-commerce website using HTML, CSS, and JavaScript,react. By combining these technologies, I created an interactive and visually appealing user interface.</p>
+                <a href="https://phenomenal-crisp-d9f0f8.netlify.app">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2><b>Shopify website</b></h2>
+                <p>Developed a front-end mini project using HTML, CSS, and JavaScript. By combining these technologies, I created an interactive and visually appealing user interface. HTML provided the structure, CSS added style and layout, while JavaScript enhanced functionality and interactivity. </p>
+                <a href="shopify-shopping-e-commerce.netlify.app">Learn more</a>
+            </div>
+            <div>
+                <i class="fa fa-trash-o" style="font-size:48px;color:white"></i>
+                <h2><b> Haan Sanitizers</b></h2>
+                <p>Developed a fully responsive and functional E-commerce website called 'Haan Sanitizer' using HTML, CSS, and JavaScript, with integrated local storage and a 
+                    JSON server.
+                <br>Utilized HTML, CSS, and JavaScript to create an intuitive and user-friendly E-commerce platform for 'Haan Sanitizer.'
+            <br>To enhance user experience, local storage was implemented for saving cart items, and a JSON server handled product data retrieval and storage</p>
+                <a href="https://haanhandsanitizer.netlify.app/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2><b>Find Your Travel Story</b></h2>
+                <p>Developed a front-end group project utilizing HTML, CSS, Bootstrap, and JavaScript. Through collaborative efforts, we designed and implemented a visually stunning and responsive user interface. HTML structured the content, CSS and Bootstrap added style and responsiveness, while JavaScript enhanced interactivity. </p>
+                <a href="#">Learn more</a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------portfolio------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/skincare.gif" >
+                    <div class="layer">
+                        <h3><b>Shagufta Skincare</b></h3>
+                        <p>Developed a skincare website using HTML, CSS, Bootstrap, Javascript,php
+                        </p>
+                          <a href="http://demo.infynow.com"><i class="fas fa-external-link-alt"></i></a>  
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/clock.gif" >
+                    <div class="layer">
+                        <h3>Clock</h3>
+                        <p>Developed a clock which display the time using css and js. </p>
+                          <a href="clock/index.html"><i class="fas fa-external-link-alt"></i></a>  
+                       
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/system.gif" >
+                    <div class="layer">
+                        <h3>Network Intrusion & Detection System </h3>
+                        <p>Created an intrusion detection system (IDS) using Docker and Selk(Suricata, Elastic Search, Logstach and kibana) watches network traffic for suspicious activity 
+and sends out alerts when it is found. </p>
+                          <a href="#"><i class="fas fa-external-link-alt"></i></a>  
+                       
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>aakritij038@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9538282569</p>
+                    <div class="social-icon">
+                        <a href="" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href=""target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href=""target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href=""target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1b-AFkN496IFi0sxuVDRlrXeKyKa0WjlY/view?usp=drive_link" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> © Aakriti Jha. Made with💜</p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect=new Typed(".multiText",{
+            strings:["Aakriti","coder","designer"],
+            loop :true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay:1500
+        })
+    </script>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemen=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemen.style.right="0";
+        }
+        function closemenu(){
+            sidemen.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyghqbpt-Ll7f1EHO1FCfTMiEoNESAN_PrEnT1Bg_vYaBHbmcSjlHOp5IKIHlYW-mos/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Thanks for your Message!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+      
+      <!-- <script>
+        // Redirect to main.html when the page is refreshed
+        window.addEventListener("beforeunload", function() {
+          window.location.href = "main.html";
+        });
+      </script> -->
+
+
+
+
+</body>
+</html>
