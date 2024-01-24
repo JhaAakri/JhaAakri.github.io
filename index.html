@@ -248,6 +248,14 @@ and sends out alerts when it is found. </p>
             sidemen.style.right="-200px";
         }
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fas").click(function () {
+                $("nav ul").toggleClass("show");
+            });
+        });
+    </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyghqbpt-Ll7f1EHO1FCfTMiEoNESAN_PrEnT1Bg_vYaBHbmcSjlHOp5IKIHlYW-mos/exec'
         const form = document.forms['submit-to-google-sheet']
